@@ -7,7 +7,10 @@ function TeaItem(props) {
             <div class="item-container">
                 <h2>{props.item.name}</h2>
                 <p>{props.item.description}</p>
-                <h3>Price: ${props.item.price}</h3>
+                <p><b>Caffeine:</b> {props.item.caffeine}
+                <br/>
+                <b>Category:</b> {props.item.type}</p>
+                <h3>${props.item.price}</h3>
                 <button onClick={() => props.addToCart(props.item)}>Add to Cart</button>
             </div>
         </div>
